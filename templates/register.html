@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %} Đăng ký {% endblock %}
+
+{% block content %}
+<form method="POST">
+    <div class="jumbotron p-2" align="center">
+        <h2>Đăng ký cho người quản trị</h2>
+    </div>
+    <hr>
+
+    <div class="jumbotron p-4">
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Nhập e-mail"/>
+        </div>
+        <div class="form-group">
+            <label for="ten">Tên của bạn</label>
+            <input type="text" class="form-control" id="ten" name="ten" placeholder="Nhập tên của bạn"/>
+        </div>
+        <div class="form-group">
+            <label for="ho">Họ của bạn</label>
+            <input type="text" class="form-control" id="ho" name="ho" placeholder="Nhập họ của bạn">
+        </div>
+        <div class="form-group">
+            <label for="mk">Mật khẩu</label>
+            <input type="password" class="form-control" id="mk" name="mk" placeholder="Nhập mật khẩu"/>
+        </div>
+        <div class="form-group">
+            <label for="xac_nhan_mk">Xác nhận mật khẩu</label>
+            <input type="password" class="form-control" id="xac_nhan_mk" name="xac_nhan_mk" placeholder="Nhập lại mật khẩu"/>
+        </div><br />
+
+        <div class="form-group" align="center">
+            <button type="submit" class="btn btn-lg btn-primary">Tạo tài khoản</button>
+            <button type="reset" class="btn btn-lg btn-danger">Hủy</button><br />
+            <br>
+            <p>Có tài khoản rồi? Vui lòng <a href="/login"><i>Đăng nhập!</i></a></p>
+        </div>
+    </div>
+</form>
+{% endblock %}
